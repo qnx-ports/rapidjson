@@ -72,7 +72,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRAPIDJSON_HAS_STDSTRING=1")
 add_library(namespacetest STATIC namespacetest.cpp)
 
 add_executable(unittest ${UNITTEST_SOURCES})
-target_link_libraries(unittest ${TEST_LIBRARIES} namespacetest)
+target_link_libraries(unittest ${TEST_LIBRARIES} namespacetest regex)
 
 add_dependencies(tests unittest)
 
